@@ -1,0 +1,25 @@
+{
+  "name": "climajs",
+  "version": "1.0.0",
+  "description": "Aplicativo de previsão do tempo",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitoralves/climaJS.git"
+  },
+  "author": "Vitor Diogo Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitoralves/climaJS/issues"
+  },
+  "homepage": "https://github.com/vitoralves/climaJS#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}
