@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,10 @@
   },
   "homepage": "https://github.com/vitoralves/climaJS#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
     "live-server": "^1.2.0",
     "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3"
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
   }
 }
