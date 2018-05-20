@@ -1,0 +1,91 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+input { border-style: none; background: transparent; outline: none; }
+button { padding: 0; background: none; border: none; outline: none; }
+
+.bg {
+    background-image: url('/img/back.jpg');
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.principal {
+    width: 100%;
+    background-color: #fff;
+}
+
+.proximos { 
+    width: 100%;
+    background-color: #3891DD;
+}
+
+.search_box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 1em;
+    background: rgba(57, 63, 84, 0.8);
+}
+
+.search_box::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+}
+
+.search_box input {
+    flex-grow: 1;
+    color: #BFD2FF;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+}
+
+.search_box input::-webkit-input-placeholder {
+    color: #7881A1;
+}
+
+.search_box button {
+    color:  #7881A1;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    transition: color .25s;
+}
+
+.search_box button:hover {
+    color: #BFD2FF;
+}
