@@ -1,3 +1,5 @@
-const x = 99;
+import Search from './models/Search';
 
-console.log(`valor do x é ${x}`);
+const search = new Search();
+console.log(search);
+console.log(search.results());
